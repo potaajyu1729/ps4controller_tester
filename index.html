@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4コントローラテスター</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PS4コントローラテスター</h1>
+        
+        <div class="connection-status">
+            <div id="status-indicator" class="disconnected">未接続</div>
+        </div>
+        
+        <div class="controller-container">
+            <div class="controller">
+                <!-- 左側 -->
+                <div class="left-side">
+                    <div class="dpad">
+                        <div class="dpad-up" id="button-12">↑</div>
+                        <div class="dpad-right" id="button-15">→</div>
+                        <div class="dpad-down" id="button-13">↓</div>
+                        <div class="dpad-left" id="button-14">←</div>
+                        <div class="dpad-center"></div>
+                    </div>
+                    <div class="left-stick-container">
+                        <div class="stick-base">
+                            <div class="stick" id="left-stick">
+                                <div class="stick-button" id="button-10">L3</div>
+                            </div>
+                        </div>
+                        <div class="stick-values">
+                            <div>X: <span id="left-x-value">0</span></div>
+                            <div>Y: <span id="left-y-value">0</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 中央 -->
+                <div class="center">
+                    <div class="top-buttons">
+                        <div class="shoulder-button" id="button-4">L1</div>
+                        <div class="shoulder-button" id="button-5">R1</div>
+                    </div>
+                    <div class="trigger-buttons">
+                        <div class="trigger" id="button-6">L2: <span id="l2-value">0</span></div>
+                        <div class="trigger" id="button-7">R2: <span id="r2-value">0</span></div>
+                    </div>
+                    <div class="center-buttons">
+                        <div class="menu-button" id="button-8">SHARE</div>
+                        <div class="ps-button" id="button-16">PS</div>
+                        <div class="menu-button" id="button-9">OPTIONS</div>
+                    </div>
+                    <div class="touchpad" id="button-17">
+                        タッチパッド
+                    </div>
+                </div>
+                
+                <!-- 右側 -->
+                <div class="right-side">
+                    <div class="face-buttons">
+                        <div class="face-button" id="button-3">□</div>
+                        <div class="face-button" id="button-1">○</div>
+                        <div class="face-button" id="button-0">×</div>
+                        <div class="face-button" id="button-2">△</div>
+                    </div>
+                    <div class="right-stick-container">
+                        <div class="stick-base">
+                            <div class="stick" id="right-stick">
+                                <div class="stick-button" id="button-11">R3</div>
+                            </div>
+                        </div>
+                        <div class="stick-values">
+                            <div>X: <span id="right-x-value">0</span></div>
+                            <div>Y: <span id="right-y-value">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="debug-info">
+            <h3>デバッグ情報</h3>
+            <div id="output">コントローラを接続してください</div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
