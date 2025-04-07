@@ -2,8 +2,8 @@
 const buttonMapping = {
   0: "×", // Cross
   1: "○", // Circle
-  2: "□", // Square
-  3: "△", // Triangle
+  2: "△", // Square
+  3: "□", // Triangle
   4: "L1", // L1
   5: "R1", // R1
   6: "L2", // L2
